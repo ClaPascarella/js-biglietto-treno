@@ -11,9 +11,9 @@ const euro = " Euro"
 console.log(prezzoBigliettoSenzaSconto);
 
 if (età <= 18) {
-    document.getElementById("costo").innerHTML = scritto + ((prezzoBigliettoSenzaSconto / 20) * 100) + euro;
+    document.getElementById("costo").innerHTML = scritto + ((prezzoBigliettoSenzaSconto / 100) * 20) + euro;
    } else if (età >= 65) {
-    document.getElementById("costo").innerHTML = scritto + ((prezzoBigliettoSenzaSconto / 40) * 100) + euro;
+    document.getElementById("costo").innerHTML = scritto + ((prezzoBigliettoSenzaSconto / 100) * 40) + euro;
    } else {
     document.getElementById("costo").innerHTML = scritto + (prezzoBigliettoSenzaSconto) + euro;
    }
